@@ -4,7 +4,7 @@ exports.min = function min (arrayMin) {
   let minResult = 0;
 
   if(arrayMin === 0 || arrayMin === undefined) {
-    minResult = 0;
+     return 0;//minResult = 0;
   } else {
     for (let currMinVal of arrayMin ) {
       if(minResult > currMinVal){
@@ -21,11 +21,12 @@ let currMaxVal = 0;
 let maxResult = 0;
 
   if(arrayMax === 0 || arrayMax === undefined) {
-    maxResult = 0;
+    return 0;
   } else {
-  for(let currMaxVal of arrayMax){
-    if(maxResult < currMaxVal){
-      maxResult = currMaxVal;
+    for(let currMaxVal of arrayMax){
+      if(maxResult < currMaxVal){
+        maxResult = currMaxVal;
+     }
     }
   }
 
